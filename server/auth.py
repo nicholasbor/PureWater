@@ -46,7 +46,7 @@ def check_hashed_pass(hashed_password, password):
 def user_signup(email, full_name, password):
     if not re.search(VALIDATE_EMAIL, email):
         return {}
-    if User.query.filter(email==email).first() is not None:
+    if User.query.filter_by(email=email).first() is not None:
         return {}
 
     hashed_password = bcrypt_password(password)
