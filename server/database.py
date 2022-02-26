@@ -17,7 +17,7 @@ class Quiz(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, default=0 ,nullable=False)
     mod_num = db.Column(db.Integer, nullable=False)
-    u_id = db.Column(db.Integer, db.ForeignKey('u.id'), nullabe=False)
+    u_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullabe=False)
 
     def __init__(self, quiz_num, score):
         self.score = score
