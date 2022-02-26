@@ -1,13 +1,8 @@
 import React from 'react';
-import ModuleCard from '../Components/ModuleCard';
-import {
-	BrowserRouter as Router,
-	Link,
-	Route,
-	Routes,
-	Switch,
-} from 'react-router-dom';
-import ModuleDetail from '../Components/ModuleDetail';
+import ModuleCard from './ModuleCard';
+import { Link, Route, Routes, Switch } from 'react-router-dom';
+import ModuleDetail from './ModuleDetail';
+import Header from './Header';
 
 function OurModules() {
 	const modules = [
@@ -39,25 +34,27 @@ function OurModules() {
 
 	return (
 		<div>
+			<Header />
 			<div className="flex flex-col justify-center items-center text-h1-big text-Bebas">
 				Our Modules
 			</div>
-			<Router>
-				<div className="flex flex-col justify-evenly">
-					{modules.map((module, key) => (
-						<>
-							<Link
-								to={`/module/${module.module_name
-									.toLowerCase()
-									.replace(/ /g, '-')}`}
-								key={module.number}
-							>
-								<ModuleCard module={module.number} name={module.module_name} />
-							</Link>
-						</>
-					))}
-				</div>
-			</Router>
+			<div className="flex flex-col justify-evenly">
+				{modules.map((module, i) => (
+					<>
+						<Link
+							to={`/modules/${module.module_name
+								.toLowerCase()
+								.replace(/ /g, '-')}`}
+						>
+							<ModuleCard
+								key={i}
+								module={module.number}
+								name={module.module_name}
+							/>
+						</Link>
+					</>
+				))}
+			</div>
 		</div>
 	);
 }

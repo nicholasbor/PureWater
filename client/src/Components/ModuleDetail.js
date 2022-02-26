@@ -1,23 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 
-function Module() {
+const ModuleDetail = () => {
 	const { name } = useParams();
 
-	return (
-		<Routes>
-			<Route path="/module/:name" element={<ModuleDetail name={name} />} />
-		</Routes>
-	);
-}
+	console.log(name);
 
-const ModuleDetail = ({ name }) => {
 	return (
 		<div>
-			<h2>Hello {name}</h2>
+			<h2>Hello {name} </h2>
 		</div>
 	);
 };
 
-export default Module;
+export default ModuleDetail;
