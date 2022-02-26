@@ -3,6 +3,7 @@ import Features from './Components/Features';
 import Header from './Components/Header';
 import Hero from './Components/Hero';
 import ModuleGrid from './Components/ModuleGrid';
+import ModuleCard from './Components/ModuleCard';
 
 function App() {
   return (
