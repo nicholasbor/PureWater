@@ -2,7 +2,7 @@ import React from 'react';
 
 function ModuleCard({ module, name }) {
 	return (
-		<div className="w-4/5 border-solid border-slate-400 border-1 shadow-md flex m-auto justify-center leading-loose my-12 ease-out duration-300 hover:scale-105 hover:ease-in hover:duration-300">
+		<div className="w-4/5 border-solid border-slate-400 border-1 shadow-md flex m-auto justify-center leading-loose my-12 ease-out duration-300 hover:scale-105 hover:ease-in hover:duration-300 cursor-pointer">
 			<div>
 				<img
 					style={{ width: '40vw', height: '40vh' }}
