@@ -1,15 +1,19 @@
 import './App.css';
-import OurModules from './Pages/OurModules';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import Features from './Components/Features';
+import Header from './Components/Header';
+import Hero from './Components/Hero';
+import ModuleGrid from './Components/ModuleGrid';
+import ModuleCard from './Components/ModuleCard';
+import { Contact } from './Components/Contact';
 
 function App() {
 	return (
 		<div className="App">
-			<Router>
-				<Routes>
-					<Route path="/module" element={<OurModules />} />
-				</Routes>
-			</Router>
+			<Header />
+			<Hero />
+			<Features />
+			<ModuleGrid />
+			<Contact />
 		</div>
 	);
 }

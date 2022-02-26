@@ -6,11 +6,20 @@ module.exports = {
 				Roboto: ['Roboto'],
 				BebasNeue: ['Bebas'],
 			},
-			fontSize: {
-				'h1-large': '72px',
-				'text-small': '18px',
-				'text-medium': '24px',
+		},
+		container: {
+			center: true,
+			padding: '1rem',
+			screens: {
+				lg: '1124px',
+				xl: '1124px',
+				'2xl': '1124px',
 			},
+		},
+		fontSize: {
+			'h1-large': '72px',
+			'text-small': '18px',
+			'text-medium': '24px',
 		},
 	},
 	plugins: [],
