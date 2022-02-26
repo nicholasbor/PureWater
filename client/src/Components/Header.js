@@ -13,7 +13,7 @@ function Header() {
                     <li className="cursor-pointer pt-2 text-lg">About Us</li>
                     <li className="cursor-pointer pt-2 text-lg">Our Modules</li>
                     <li className="cursor-pointer pt-2 text-lg">Contact Us</li>
-                    <button type="button" className="bg-blue-400 text-white text-md rounded-md px-7 py-3 uppercase">Login</button>
+                    <button type="button" className="btn bg-blue-400 text-white text-lg hover:bg-gray-300 hover:text-black text-md rounded-md px-7 py-3 uppercase">Login</button>
                 </ul>
                 <div className="flex sm:hidden flex-1 justify-end">
                 <i class="text-3xl fa-solid fa-bars"></i>

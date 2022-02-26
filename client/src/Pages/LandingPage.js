@@ -1,4 +1,5 @@
 import React from "react";
+import { Contact } from "../Components/Contact";
 import Features from "../Components/Features";
 import Header from "../Components/Header";
 import Hero from "../Components/Hero";
@@ -11,6 +12,7 @@ function LandingPage() {
             <Hero />
             <Features />
             <ModuleGrid />
+            <Contact />
         </div>
     );
 }

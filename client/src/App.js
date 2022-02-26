@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Hero from './Components/Hero';
 import ModuleGrid from './Components/ModuleGrid';
 import ModuleCard from './Components/ModuleCard';
+import { Contact } from './Components/Contact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Features />
       <ModuleGrid />
+      <Contact />
     </div>
   );
 }
