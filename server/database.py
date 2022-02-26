@@ -12,3 +12,14 @@ class User(db.Model):
         self.email = email
         self.full_name = full_name
         self.password = password
+
+class Quiz(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    score = db.Column(db.Integer, primary_key=True)
+    mod_num = db.Column(db.Integer, primary_key=True)
+
+    def __init__(self, quiz_num, score):
+        self.score = score
+        self.mod_num = mod_num
+
+        
