@@ -1,10 +1,17 @@
-import MultiChoice from './Components/MultiChoice';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './Components/LandingPage';
+import OurModules from './Components/OurModules';
+import ModuleDetail from './Components/ModuleDetail';
 
 function App() {
 	return (
-		<div className="App">
-			<MultiChoice />
-		</div>
+		<Router>
+			<Routes>
+				<Route path="/" element={<LandingPage />} />
+				<Route path="/modules" element={<OurModules />} />
+				<Route path="/modules/:name" element={<ModuleDetail />} />
+			</Routes>
+		</Router>
 	);
 }
 
