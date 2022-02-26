@@ -34,8 +34,8 @@ def decode_token(token):
 
 def bcrypt_password(password):
     saltRound = 10
-    salt = bcrypt.genSalt(saltRound)
-    hashed_password = bcrypt.hashpw(password, salt)
+    salt = bcrypt.gensalt(rounds=saltRound)
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
     return hashed_password
 
 def check_hashed_pass(hashed_password, password):
@@ -46,8 +46,7 @@ def check_hashed_pass(hashed_password, password):
 def user_signup(email, full_name, password):
     if not re.search(VALIDATE_EMAIL, email):
         return {}
-    email = User.query.filter_by(email=email).first()
-    if not email or not full_name or not password:
+    if User.query.filter(email==email).first() is not None:
         return {}
 
     hashed_password = bcrypt_password(password)
@@ -63,10 +62,10 @@ def user_login(email, password):
     if not re.search(VALIDATE_EMAIL, email):
         return {}
     user = User.query.filter_by(email=email).first()
-    if not user or not password:
+    if user is None:
         return {}
 
-    if check_hashed_pass(user.password, password):
+    if check_hashed_pass(user.password, password.encode('utf-8')):
         token = encode_token(user.id)
         return {
             'token': token
