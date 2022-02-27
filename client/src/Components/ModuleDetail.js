@@ -6,6 +6,8 @@ import MultiChoice from './MultiChoice';
 const ModuleDetail = () => {
 	const { name, id } = useParams();
 
+	console.log(name);
+
 	const submitResults = () => {
 		alert('Result Submitted!');
 	};
@@ -15,8 +17,6 @@ const ModuleDetail = () => {
 		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 	}, []);
 
-	console.log(name);
-
 	return (
 		<>
 			<Header />
@@ -24,7 +24,8 @@ const ModuleDetail = () => {
 				<div class="max-w-prose mx-auto lg:text-lg"></div>
 				<div class="mt-8 prose prose-slate mx-auto lg:prose-lg">
 					<h1>
-						Module {id} : {name}
+						Module {id} :{' '}
+						{name.charAt(0).toUpperCase() + name.slice(1).replace(/-/g, ' ')}
 					</h1>
 					<p class="lead">
 						This module is intended to help students understand and gain basic
@@ -50,20 +51,20 @@ const ModuleDetail = () => {
 						<label for="img">Select image: </label>
 						<input
 							className="not-prose form-control
-    block
-    w-full
-    px-2
-    py-1
-    text-sm
-    font-normal
-    text-gray-700
-    bg-white bg-clip-padding
-    border border-solid border-gray-300
-    rounded
-    transition
-    ease-in-out
-    m-0
-    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+      block
+      w-full
+      px-2
+      py-1
+      text-sm
+      font-normal
+      text-gray-700
+      bg-white bg-clip-padding
+      border border-solid border-gray-300
+      rounded
+      transition
+      ease-in-out
+      m-0
+      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
 							type="file"
 							id="img"
 							name="img"
@@ -159,15 +160,37 @@ const ModuleDetail = () => {
 							</tr>
 						</tbody>
 					</table>
+					<h3>Quiz</h3>
+				</div>
 
-					<div className="text-center text-lg uppercase">Quiz Time 🎉</div>
-					<MultiChoice />
-					<button
-						onClick={() => submitResults()}
-						className="bg-sky-500 p-4 m-6 text-white rounded-lg"
-					>
-						Submit Module
-					</button>
+				<MultiChoice />
+				<button
+					onClick={() => submitResults()}
+					className="bg-sky-500 p-4 m-6 text-white rounded-lg flex items-center justify-center mx-auto"
+				>
+					Submit Module
+				</button>
+				<div className="flex flex-col max-w-2xl w-full mx-auto">
+					<div className="mt-20 font-bold text-gray-700 px-5 lg:text-lg">
+						<h3>Comments</h3>
+					</div>
+					<div class="mt-3 p-3 w-full focus-within:border-blue-600">
+						<textarea
+							rows="3"
+							class="border p-2 rounded w-full focus:outline-none"
+							placeholder="Add comment here"
+						></textarea>
+					</div>
+
+					<div>
+						<button
+							class="mx-4 px-5 py-1 bg-blue-600 text-white rounded hover:shadow-md shadow-sm hover:bg-blue-500"
+							type="submit"
+							onClick={() => alert('You are not logged in!')}
+						>
+							Post
+						</button>
+					</div>
 				</div>
 			</div>
 		</>

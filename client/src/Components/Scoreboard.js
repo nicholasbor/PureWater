@@ -1,6 +1,8 @@
 import React from 'react';
 
 function Scoreboard({ score, questions }) {
+	console.log(questions);
+
 	return (
 		<div>
 			<div>You got a score of {score} in this module!</div>
