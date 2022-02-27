@@ -15,7 +15,7 @@ const Hero = () => {
                 </p>
                 <div className='flex justify-center flex-wrap gap-6'>
                     <Link to="/modules">
-                        <button type="button" className="bg-blue-400 px-10 py-3 text-xl uppercase mt-10 rounded-lg text-white hover:duration-300 hover:bg-gray-300 hover:text-black">GET STARTED</button>
+                        <button type="button" className="px-10 py-3 text-xl uppercase mt-10 rounded-lg text-white bg-blue-400 hover:duration-300 hover:bg-sky-700 shadow-sm hover:shadow-lg hover:text-white">GET STARTED</button>
                     </Link>
                 </div>
             </div>
