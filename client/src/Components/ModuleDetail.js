@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Header';
 import { useParams } from 'react-router-dom';
 import MultiChoice from './MultiChoice';
 
 const ModuleDetail = () => {
-	const { name } = useParams();
+	const { name, id } = useParams();
 
-	console.log(name);
+	const submitResults = () => {
+		alert('Result Submitted!');
+	};
+
+	useEffect(() => {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}, []);
 
     return (
       <>
@@ -16,7 +23,7 @@ const ModuleDetail = () => {
       </div>
       <div class="mt-8 prose prose-slate mx-auto lg:prose-lg">
 
-      <h1>Module 1 : Water Resources and Accessibility</h1>
+      <h1>Module {id} : {name}</h1>
         <p class="lead">This module is intended to help students understand and gain basic knowledge on how water is cascaded to our houses for consumption. They will be able to appreciate the constrigency of water extraction and conveyance.</p>
         <h2>Water Sources</h2>
         <p className=''>Water sources are classified according to their geographical location</p>
@@ -105,6 +112,16 @@ const ModuleDetail = () => {
     </div>
 
 
+					<div className="text-center text-lg uppercase">Quiz Time 🎉</div>
+					<MultiChoice />
+					<button
+						onClick={() => submitResults()}
+						className="bg-sky-500 p-4 m-6 text-white rounded-lg"
+					>
+						Submit Module
+					</button>
+				</div>
+			</div>
 		</>
 	);
 };
