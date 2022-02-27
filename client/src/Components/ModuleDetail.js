@@ -91,11 +91,16 @@ const ModuleDetail = () => {
             </tr>
           </tbody>
         </table>
+		<h3>Quiz</h3>
 
-      <button>Submit Module</button>
-        
       </div>
 
+					<MultiChoice />
+					<button
+						onClick={() => submitResults()}
+						className="bg-sky-500 p-4 m-6 text-white rounded-lg flex items-center justify-center mx-auto">
+						Submit Module
+					</button>
       <div className='flex flex-col max-w-2xl w-full mx-auto'>
         <div className='mt-20 font-bold text-gray-700 px-5 lg:text-lg'>
           <h3>Comments</h3>
@@ -109,19 +114,11 @@ const ModuleDetail = () => {
         </div>
       </div>
 
+
     </div>
 
 
-					<div className="text-center text-lg uppercase">Quiz Time 🎉</div>
-					<MultiChoice />
-					<button
-						onClick={() => submitResults()}
-						className="bg-sky-500 p-4 m-6 text-white rounded-lg"
-					>
-						Submit Module
-					</button>
-				</div>
-			</div>
+				
 		</>
 	);
 };
