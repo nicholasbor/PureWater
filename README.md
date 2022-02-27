@@ -1,5 +1,5 @@
 # PureWater
-Website is hosted on netlify one the following link: [PureWater](https://stoic-raman-707af2.netlify.app/)
+Website is hosted on netlify with the following link: [PureWater](https://stoic-raman-707af2.netlify.app/)
 
 ## Contents 
     Module 1: Water Resources and Accessibility
