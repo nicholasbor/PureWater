@@ -22,5 +22,5 @@ module.exports = {
 			'text-medium': '24px',
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 };
