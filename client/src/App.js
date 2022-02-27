@@ -10,7 +10,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<LandingPage />} />
 				<Route path="/modules" element={<OurModules />} />
-				<Route path="/modules/:name" element={<ModuleDetail />} />
+				<Route path="/modules/:id/:name" element={<ModuleDetail />} />
 			</Routes>
 		</Router>
 	);
