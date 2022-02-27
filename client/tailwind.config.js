@@ -4,7 +4,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				Roboto: ['Roboto'],
-				BebasNeue: ['Bebas'],
+				Bebas: ['Bebas Neue'],
 			},
 		},
 		container: {
