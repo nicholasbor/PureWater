@@ -11,7 +11,7 @@ const Hero = () => {
                     SANITARY EDUCATION FOR OUR MOST VULNERABLE
                 </h2>
                 <p className='text-gray text-lg text-center lg:text-left mb-6'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    PureWater provides users a platform to engage in educational water sanitation content. Aligning with the United Nations Sustainable Development Goals of good health and well-being, clean water and sanitation and reducing inequalities, our platform acts as a bridge to provide quality education whilst simultaneously tackling these issues. As civilisation progresses, the necessity to carefully manage our supply for future generations is highly important. Teaching effective sanitation techniques and purification processes will aid towards this common goal and allow for increased quality of life for all.
                 </p>
                 <div className='flex justify-center flex-wrap gap-6'>
                     <Link to="/modules">

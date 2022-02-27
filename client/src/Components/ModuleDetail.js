@@ -28,11 +28,10 @@ const ModuleDetail = () => {
 						{name.charAt(0).toUpperCase() + name.slice(1).replace(/-/g, ' ')}
 					</h1>
 					<p class="lead">
-						PureWater provides users a platform to engage in educational water sanitation content. 
-						Aligning with the United Nations Sustainable Development Goals of good health and well-being, clean water and sanitation and reducing inequalities, 
-						our platform acts as a bridge to provide quality education whilst simultaneously tackling these issues. 
-						As civilisation progresses, the necessity to carefully manage our supply for future generations is highly important. 
-						Teaching effective sanitation techniques and purification processes will aid towards this common goal and allow for increased quality of life for all.
+						This module is intended to help students understand and gain basic
+						knowledge on how water is cascaded to our houses for consumption.
+						They will be able to appreciate the constrigency of water extraction
+						and conveyance.
 					</p>
 					<h2>Water Sources</h2>
 					<p className="">
