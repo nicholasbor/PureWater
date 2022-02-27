@@ -1,14 +1,12 @@
 import React from 'react';
 
-function ModuleCard({ module, name }) {
+function ModuleCard({ module, name, img }) {
+	console.log(img);
+
 	return (
 		<div className="w-4/5 border-solid border-slate-400 border-1 shadow-md flex m-auto justify-center leading-loose my-12 ease-out duration-300 hover:scale-105 hover:ease-in hover:duration-300 cursor-pointer">
 			<div>
-				<img
-					style={{ width: '40vw', height: '40vh' }}
-					src="https://picsum.photos/200/300"
-					alt="img"
-				/>
+				<img style={{ width: '40vw', height: '40vh' }} src={img} alt="img" />
 			</div>
 			<div className="flex flex-col">
 				<div className="text-left mb-4 ml-8 mt-10">

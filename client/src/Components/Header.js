@@ -19,9 +19,17 @@ function Header() {
 						<img src={Logo} alt="" />
 					</Link>
 				</div>
-				<ul style={{ fontSize: '20px' }} className="hidden sm:flex flex-1 justify-end item-center align-middle gap-12 text-black font-Bebas uppercase">
+				<ul
+					style={{ fontSize: '20px' }}
+					className="hidden sm:flex flex-1 justify-end item-center align-middle gap-12 text-black font-Bebas uppercase"
+				>
 					<ScrollLink to="help" smooth={true}>
-						<li onclick="smoothScroll(document.getElementById('help'))" className="cursor-pointer pt-3 text-xl">Help</li>
+						<li
+							onclick="smoothScroll(document.getElementById('help'))"
+							className="cursor-pointer pt-3 text-xl"
+						>
+							Help
+						</li>
 					</ScrollLink>
 					<Link to="/modules">
 						<li className="cursor-pointer pt-3 text-lg">Our Modules</li>
@@ -29,8 +37,11 @@ function Header() {
 					<ScrollLink to="contact" smooth={true}>
 						<li className="cursor-pointer pt-3 text-lg">Contact Us</li>
 					</ScrollLink>
-					
-					<button type="button" className="btn text-white text-sm bg-blue-400 hover:duration-300 hover:bg-sky-700 shadow-sm hover:shadow-lg hover:text-white rounded-md uppercase">
+
+					<button
+						type="button"
+						className="btn text-white text-sm bg-blue-400 hover:duration-300 hover:bg-sky-700 shadow-sm hover:shadow-lg hover:text-white rounded-md uppercase"
+					>
 						Login
 					</button>
 				</ul>
