@@ -58,28 +58,28 @@ const ModuleDetail = () => {
             <td>For drinking</td>
             <td><input type="text"/></td>
             <td>  <input type="range" id="drink" name="drink"
-         min="0" max="5" oninput="this.nextElementSibling.value = this.value" /> <output>0</output> </td>
+         min="0" max="5" oninput="this.nextElementSibling.value = this.value" /> </td>
           </tr>
 
 		  <tr>
             <td>For cooking</td>
             <td><input type="text"/></td>
             <td>  <input type="range" id="drink" name="drink"
-         min="0" max="5" oninput="this.nextElementSibling.value = this.value" /> <output>0</output> </td>
+         min="0" max="5" oninput="this.nextElementSibling.value = this.value" /> </td>
           </tr>
 
 		  <tr>
             <td>For washing</td>
             <td><input type="text"/></td>
             <td>  <input type="range" id="drink" name="drink"
-         min="0" max="5" oninput="this.nextElementSibling.value = this.value" /> <output>0</output> </td>
+         min="0" max="5" oninput="this.nextElementSibling.value = this.value" /> </td>
           </tr>
 
 		  <tr>
             <td>Other utilities</td>
             <td><input type="text"/></td>
             <td>  <input type="range" id="drink" name="drink"
-         min="0" max="5" oninput="this.nextElementSibling.value = this.value" /> <output>0</output> </td>
+         min="0" max="5" oninput="this.nextElementSibling.value = this.value" /> </td>
           </tr>
         </tbody>
       </table>
