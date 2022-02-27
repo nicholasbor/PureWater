@@ -63,14 +63,7 @@ const ModuleGrid = () => {
 			</div>
 			<div className="flex justify-center flex-wrap pt-14">
 				<Link to="/modules">
-<<<<<<< HEAD
 					<button type="button" className="animate-float px-10 py-3 text-xl uppercase mt-10 rounded-lg text-white bg-blue-400 hover:duration-300 hover:bg-sky-700 shadow-sm hover:shadow-lg hover:text-white">
-=======
-					<button
-						type="button"
-						className="animate-float bg-blue-400 px-10 py-3 text-xl uppercase mt-10 rounded-lg text-white"
-					>
->>>>>>> 14d04277d1a2bb3ace27a3d92902b5c9f2f9b342
 						CLICK HERE TO LEARN MORE
 					</button>
 				</Link>
