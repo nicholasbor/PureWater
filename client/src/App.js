@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './Components/LandingPage';
 import OurModules from './Components/OurModules';
 import ModuleDetail from './Components/ModuleDetail';
+import './App.css';
 
 function App() {
 	return (

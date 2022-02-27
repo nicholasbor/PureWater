@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../Images/logo.png';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Header() {
 	return (
@@ -18,16 +19,18 @@ function Header() {
 						<img src={Logo} alt="" />
 					</Link>
 				</div>
-				<ul className="hidden sm:flex flex-1 justify-end item-center align-middle gap-12 text-black uppercase text-xs">
-					<li className="cursor-pointer pt-2 text-lg">About Us</li>
+				<ul style={{ fontSize: '20px' }} className="hidden sm:flex flex-1 justify-end item-center align-middle gap-12 text-black font-Bebas uppercase">
+					<ScrollLink to="about" smooth={true}>
+						<li onclick="smoothScroll(document.getElementById('about'))" className="cursor-pointer pt-3 text-xl">About Us</li>
+					</ScrollLink>
 					<Link to="/modules">
-						<li className="cursor-pointer pt-2 text-lg">Our Modules</li>
+						<li className="cursor-pointer pt-3 text-lg">Our Modules</li>
 					</Link>
-					<li className="cursor-pointer pt-2 text-lg">Contact Us</li>
-					<button
-						type="button"
-						className="btn bg-blue-400 text-white text-lg hover:bg-gray-300 hover:text-black text-md rounded-md px-7 py-3 uppercase"
-					>
+					<ScrollLink to="contact" smooth={true}>
+						<li className="cursor-pointer pt-3 text-lg">Contact Us</li>
+					</ScrollLink>
+					
+					<button type="button" className="btn bg-blue-400 text-white text-sm hover:bg-gray-300 hover:text-black rounded-md uppercase">
 						Login
 					</button>
 				</ul>
