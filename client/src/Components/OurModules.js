@@ -1,7 +1,6 @@
 import React from 'react';
 import ModuleCard from './ModuleCard';
 import { Link, Route, Routes, Switch } from 'react-router-dom';
-import ModuleDetail from './ModuleDetail';
 import Header from './Header';
 
 function OurModules() {
@@ -35,7 +34,10 @@ function OurModules() {
 	return (
 		<div>
 			<Header />
-			<div className="flex flex-col justify-center items-center text-h1-big text-Bebas">
+			<div
+				styles={{ fontSize: '48px' }}
+				className="flex flex-col justify-center items-center font-Bebas"
+			>
 				Our Modules
 			</div>
 			<div className="flex flex-col justify-evenly">

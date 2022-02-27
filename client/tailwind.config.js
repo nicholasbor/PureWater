@@ -4,7 +4,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				Roboto: ['Roboto'],
-				BebasNeue: ['Bebas'],
+				Bebas: ['Bebas Neue'],
 			},
 		},
 		container: {
@@ -22,5 +22,5 @@ module.exports = {
 			'text-medium': '24px',
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 };
