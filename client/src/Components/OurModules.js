@@ -44,7 +44,7 @@ function OurModules() {
 				{modules.map((module, i) => (
 					<>
 						<Link
-							to={`/modules/${module.module_name
+							to={`/modules/${module.number}/${module.module_name
 								.toLowerCase()
 								.replace(/ /g, '-')}`}
 						>

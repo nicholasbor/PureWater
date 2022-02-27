@@ -68,7 +68,7 @@ function MultiChoice() {
 	};
 
 	return (
-		<div className="flex flex-col justify-center items-center my-20">
+		<div className="flex flex-col justify-center items-center">
 			<div className="text-center w-max">
 				<h3 className="text-Bebas text-grey-400 text-Bebas">
 					Question {currentQuestion + 1}
